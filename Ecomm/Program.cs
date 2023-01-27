@@ -1,8 +1,5 @@
 using Ecomm.Data;
 using Microsoft.EntityFrameworkCore;
-using System.Data.Common;
-//using Microsoft.Extensions.DependencyInjection.MvcServiceCollectionExtensions;
-using Microsoft.AspNetCore.Mvc;
 
 var builder = WebApplication.CreateBuilder(args);
 
