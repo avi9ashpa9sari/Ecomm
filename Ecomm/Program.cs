@@ -1,5 +1,7 @@
+using Ecomm;
 using Ecomm.Data;
 using Microsoft.EntityFrameworkCore;
+using System.Collections;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,11 +24,13 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+//app.UseSampleMiddleware();
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
 app.MapControllers();
 
+
 app.Run();
+
